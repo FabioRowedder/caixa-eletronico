@@ -1,11 +1,15 @@
 Desafio de avaliação - Sistema de Caixa Eletrônico
 
-O sistema (RESTfull, JDK 8, UTF8) foi desenvolvido em Spring Boot e utiliza Swagger para disponibilizar uma interface de teste padronizada.
+O sistema (RESTfull, JDK 8, Graddle, UTF8) foi desenvolvido em Spring Boot e utiliza Swagger para disponibilizar uma interface de teste padronizada.
 Uma vez iniciado, um servidor Tomcat passará a atender as requisições de saque através da seguinte url:
 
 http://localhost:8080/swagger-ui.html
 
-Para rodar a aplicação, execute como 'Aplicação Java' a classe com.zenvia.challenge.caixa.CaixaApplication.java
+Para rodar a aplicação, execute como 'Aplicação Java' a classe com.zenvia.challenge.caixa.CaixaApplication.java.
+
+Para compilar o projeto e executar os testes existentes, executar a seguinte linha de comando na raiz do projeto:
+
+.\gradlew.bat clean build --refresh-dependencies
 
 As respostas às requisições trarão a configuração de cédulas que devem ser dispensadas para o saque solicitado. 
 Uma mensagem de erro relevante será enviada se alguma regra de negócio for infringida.
